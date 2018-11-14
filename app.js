@@ -1,5 +1,6 @@
 var createError = require('http-errors');
 var express = require('express');
+mongoose = require('mongoose');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
@@ -10,6 +11,8 @@ var loginRouter = require('./routes/login');
 var registerRouter = require('./routes/register');
 
 var app = express();
+
+mongoose.connect('mongodb://admin:admin1234@ds121373.mlab.com:21373/pennywise', {useNewUrlParser: true});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
