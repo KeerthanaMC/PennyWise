@@ -1,1 +1,2 @@
-# budget_app
+# Penny Wise
+A simple budget web-app
