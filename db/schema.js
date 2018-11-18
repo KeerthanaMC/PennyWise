@@ -5,7 +5,6 @@ var Schema = mongoose.Schema;
 mongoose.Promise = global.Promise;
 
 var CreditSchema = new Schema({	
-    username: {type: String, required:true },
     amount: { type: Number, required: true },
     note: { type: String, required: true },
     createdAt: Date,
@@ -23,7 +22,6 @@ CreditSchema.pre('save', function(next) {
 })
 
 var ExpenseSchema = new Schema({
-    username: {type: String, required: true},
     amount: { type: Number, required: true },
     note: { type: String, required: true },
     createdAt: Date,

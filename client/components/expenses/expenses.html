@@ -17,7 +17,7 @@
     <div class="card">
         <div class="card-content">
             <h3>Total Expenses</h3>
-            <h3><i>{{ $ctrl.totalExpenses() | currency }}</i></h3>
+            <h3><i>{{ $ctrl.totalExpenses() | currency:'INR' }}</i></h3>
         </div>
     </div>
 
@@ -26,13 +26,14 @@
 
             <table>
                 <tr>
+                    <th></th>
                     <th>Amount</th>
                     <th>Note</th>
                     <th>Date Entered</th>
                     <th></th>
                 </tr>
                 <tr class="row" ng-repeat="expenseEntry in $ctrl.expenseEntries">
-                    <td>{{ expenseEntry.amount | currency }}</td>
+                    <td>{{ expenseEntry.amount | currency:'INR' }}</td>
                     <td>{{ expenseEntry.note }}</td>
                     <td>{{ expenseEntry.createdAt | date : 'medium' }}</td>
                     <td><button class="btn" ng-click="$ctrl.showExpense(expenseEntry._id)">View</button></td>
