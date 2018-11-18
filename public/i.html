@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BudgetApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Budget App</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+</head>
+
+<body>
+
+    <nav class="center-align">
+        <a class="btn" ui-sref="credits">CREDITS</a>
+        <a class="btn" ui-sref="expenses">EXPENSES</a>
+    </nav>
+
+    <ui-view></ui-view>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script src="js/app.bundle.js"></script>
+</body>
+
+</html>

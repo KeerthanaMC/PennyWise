@@ -1,2 +1,1 @@
-# PennyWise
-A simple budget management web-application.
+# budget_app
